@@ -1,0 +1,121 @@
+:root {
+  --light-cyan: #cee3e9;
+  --neon-green: #52ffa8;
+  --grayish-blue: #4e5d73;
+  --dark-grayish-blue: #323a49;
+  ---dark-blue: #1f2632;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+  background-color: var(---dark-blue);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.advice__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em 0.5em;
+  padding: 2.5em 1em 0;
+  width: 90%;
+  max-width: 560px;
+  text-align: center;
+  background-color: var(--dark-grayish-blue);
+  border-radius: 20px;
+}
+.advice__tag {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: var(--neon-green);
+}
+.advice__text {
+  margin: 1em;
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--light-cyan);
+}
+.advice__divider-mobile {
+  width: 95%;
+}
+.advice__button {
+  margin: 0.5em;
+  padding: 1.2em;
+  transform: translateY(50%);
+  background-color: var(--neon-green);
+  border: none;
+  border-radius: 50%;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+.advice__button:hover {
+  box-shadow: 0 0 30px 0 var(--neon-green);
+}
+
+.animate {
+  -webkit-animation: diceroll 1s forwards;
+          animation: diceroll 1s forwards;
+}
+
+@-webkit-keyframes diceroll {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes diceroll {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.footer {
+  margin: 2.5em 1.5em 0.5em;
+  padding: 1em;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--light-cyan);
+}
+.footer-link {
+  color: var(--neon-green);
+}
+
+@media (min-width: 375px) {
+  .advice__divider-mobile {
+    width: 100%;
+  }
+  .footer {
+    margin: 3.5em 1.5em 0.5em;
+    padding: 1.5em;
+  }
+}/*# sourceMappingURL=style.css.map */

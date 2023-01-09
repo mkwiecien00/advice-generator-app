@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+        <title>Frontend Mentor | Advice generator app</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./js/script.js" defer></script>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+
+        <main class="main">
+
+            <div class="advice__container">
+
+                <h2 class="advice__tag">Advice #<span class="advice__tag-number"></span></h2>
+                <p class="advice__text">Click the dice and get some advice!</p>
+
+                <picture>
+                    <source class="advice__divider-desktop" media="(min-width: 550px)"
+                        srcset="./img/pattern-divider-desktop.svg">
+
+                    <img class="advice__divider-mobile" src="./img/pattern-divider-mobile.svg" alt="">
+                </picture>
+
+                <button class="advice__button"><img class="advice__button-img" src="./img/icon-dice.svg"
+                        alt="Dice to generate new advice"></button>
+
+            </div>
+
+            <div class="footer">
+                <p class="footer-text">Challenge by <a class="footer-link"
+                        href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                    Coded by <a class="footer-link" href="#">Małgorzata Kwiecień</a>.</p>
+            </div>
+
+        </main>
+
+    </body>
+
+</html>
