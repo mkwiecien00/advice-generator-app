@@ -6,9 +6,7 @@ const URL = 'https://api.adviceslip.com/advice'
 
 const diceRoll = () => {
 	buttonImg.classList.add('animate')
-	setTimeout(function () {
-		buttonImg.classList.remove('animate')
-	}, 1000)
+	setTimeout(showAdvice, 1000)
 }
 
 async function showAdvice() {
@@ -19,9 +17,8 @@ async function showAdvice() {
 	} catch {
 		console.error(`Something went wrong. Try again later.`)
 	}
+
+	buttonImg.classList.remove('animate')
 }
 
-button.addEventListener('click', () => {
-	diceRoll()
-	showAdvice()
-})
+button.addEventListener('click', diceRoll)
